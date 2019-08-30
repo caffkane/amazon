@@ -1,0 +1,16 @@
+<%= render :partial => 'navbar' %>
+
+<h1>Contact Us</h1>
+<p>Fill out the form, but we'll never reply :)</p>
+
+<form onsubmit="/thank_you">
+  NAME:<br>
+  <input type="text" name="name" placeholder="Enter text here..."><br>
+  EMAIL:<br>
+  <input type="email" name="email" placeholder="Enter text here..."><br>
+  MESSAGE:<br>
+  <textarea type="text" rows="4" cols="50" name="comment" form="usrform" placeholder="Enter text here..."></textarea><br>
+  <input type="submit">
+</form>
+
+<%= render :partial => 'footer' %>
